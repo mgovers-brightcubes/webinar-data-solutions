@@ -1,0 +1,11 @@
+# data
+data
+data/
+
+# virtual environment
+venv/
+__pycache__/
+.pytest_cache/
+
+# IDE
+.vscode/
