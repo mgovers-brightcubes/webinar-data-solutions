@@ -2,7 +2,7 @@
 
 This repository contains the demo code used in the
 
-> Bright Webinar "The Hitchhiker's Guide to Data Solutions".
+> [Bright Webinar "The Hitchhiker's Guide to Data Solutions".](https://www.meetup.com/Bright-Cubes-Bright-Sessions/events/275582047/)
 
 It contains two examples:
 
