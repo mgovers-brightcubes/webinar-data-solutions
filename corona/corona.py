@@ -133,6 +133,9 @@ if __name__ == "__main__":
 
     rd_seed(707)
     np_seed(1337)
+
+    totals = []
+    plt.subplot(121)
     for _ in range(10):
         population = Population(size=1000, exp_household_size=2.3,
                                 n_infected=2)
@@ -144,9 +147,16 @@ if __name__ == "__main__":
         runner.run(100)
 
         plt.plot(runner.infected_over_time)
+        totals.append(evolution.total_cases())
         print('Total #cases:', evolution.total_cases())
 
-    plt.title('Active cases over time (different scenarios)')
+    plt.title('Active cases over time\n(different scenarios)')
     plt.xlabel('time (days)')
     plt.ylabel('#active cases')
+
+    plt.subplot(122)
+    plt.hist(totals)
+    plt.title('Histogram of total\ncases per scenario')
+    plt.xlabel('Total #cases')
+    plt.xlabel('#runs in bin')
     plt.show()
