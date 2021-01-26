@@ -144,7 +144,7 @@ if __name__ == "__main__":
         runner.run(100)
 
         plt.plot(runner.infected_over_time)
-        print(evolution.total_cases())
+        print('Total #cases:', evolution.total_cases())
 
     plt.title('Active cases over time (different scenarios)')
     plt.xlabel('time (days)')
